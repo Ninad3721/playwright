@@ -1,6 +1,11 @@
 import { defineConfig, devices, PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  testMatch: ["lamdatest.test.ts"] // files that you want to test
+  testMatch: ["assertion.test.ts"], // files that you want to test
+  use:
+  {
+    headless: false,
 
+  },
+  reporter: [["html", { open: "never" }]]
 }
