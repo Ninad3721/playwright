@@ -33,3 +33,4 @@ test.only("Checkbox testing", async ({ page }) => {
     await checkbox.check()
     await expect(checkbox).toBeChecked()
 })
+
